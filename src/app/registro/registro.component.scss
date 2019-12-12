@@ -1,0 +1,45 @@
+body {
+    background-image: url('src/assets/img2/page-bg/2.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    width: auto;
+    height: auto;
+}
+.filterMenu{
+position: relative;
+top: 20%;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 30%;
+// display: flex;
+}
+.campo {
+    background-color: #EDF4F6;
+}
+.DP {
+//   position: relative;
+//   left: 20%;
+//   top: 30%;
+//   margin-top: 20%;
+
+}
+.inputColor{
+     background-color: #edf4f6;
+     size: 1.6em;
+    // color: grey;
+}
+.formulario {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.formInput{
+     font-size: 1.3em;
+     width: 40%;
+     color:#000;
+
+    
+}
