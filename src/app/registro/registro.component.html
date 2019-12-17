@@ -1,46 +1,369 @@
-<mat-card class="filterMenu">
+<div class="cadastro max_width">
+    <span class="fc ">
+    Faça seu cadastro
+  </span>
+  </div> 
+<mat-card class="filterMenu" >
   <mat-card-header>
-      <mat-card-title class="">Dados pessoais</mat-card-title>
+    <mat-card-title class="DP">Dados pessoais</mat-card-title>
     <mat-card-subtitle class="subtitle">
       Preencha os campos abaixo!
     </mat-card-subtitle>
   </mat-card-header>
+  <br>
+  <br>    
   <mat-card-content>
     <form class="formulario" [formGroup]="formulario">
-      <mat-form-field appearance="inline" class="formInput">
+      <!-- //Nome Completo -->
+      <mat-form-field appearance="fill" class="formInput">
         <mat-label>Nome Completo</mat-label>
         <input
           required
           matInput
           placeholder=""
-          formControlName="contractNumber"
+          formControlName="nome"
           class="inputColor"
         />
-        
 
         <mat-error>
-          {{ formulario.get("contractNumber")["errors"] | errorKey }}
+          {{ formulario.get("nome")["errors"] | errorKey }}
         </mat-error>
       </mat-form-field>
-       
-      <mat-form-field appearance="inline" class="formInput">
-         <mat-label>Email</mat-label>
-        <input 
-        required
-        matInput
-        placeholder=""
-        formControlName="contractNumber"
-        class="inputColor"
-        >
+      <!-- Email -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Email</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="email"
+          class="inputColor"
+        />
         <mat-error>
-          {{ formulario.get("contractNumber")["errors"] | errorKey }}
+          {{ formulario.get("email")["errors"] | errorKey }}
         </mat-error>
-      </mat-form-field> 
+      </mat-form-field>
+      <!-- CPF -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>CPF</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="cpf"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("cpf")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Rg -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>RG</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="rg"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("rg")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Orgão expeditor -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Orgão expeditor</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="o_e"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("o_e")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Data de expedição -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Data de expedição</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="data_e"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("data_e")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Título de eleitor -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Título de eleitor</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="t_e"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("t_e")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Zona/Seção -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Zona/Seção</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="zs"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("zs")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Data de nascimento -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Data de nascimento</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="d_n"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("d_n")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Nacionalidade -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Nacionalidade</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="nacionalidade"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("nacionalidade")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Nome do pai -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Nome do pai</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="nomepai"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("nomepai")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
+      <!-- Nome da mãe -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Nome da mãe</mat-label>
+        <input
+          required
+          matInput
+          placeholder=""
+          formControlName="nomemae"
+          class="inputColor"
+        />
+        <mat-error>
+          {{ formulario.get("nomemae")["errors"] | errorKey }}
+        </mat-error>
+      </mat-form-field>
     </form>
-  </mat-card-content>
+      <br>
+      <br>
+      <br>
+      <mat-card-title class="DP">Outros Dados</mat-card-title>
+      <br>
+      <br>
+      <br>
+      <form class="formulario" [formGroup]="formulario">
+        <!-- //Numero do passaporte -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>Número do passaporte</mat-label>
+          <input
+            required
+            matInput
+            placeholder=""
+            formControlName="np"
+            class="inputColor"
+          />
+          <mat-error>
+            {{ formulario.get("np")["errors"] | errorKey }}
+          </mat-error>
+        </mat-form-field>
+        <!-- carteira de habilitação -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>Carteira de Habilitação</mat-label>
+          <input
+            required
+            matInput
+            placeholder=""
+            formControlName="ch"
+            class="inputColor"
+          />
+          <mat-error>
+            {{ formulario.get("ch")["errors"] | errorKey }}
+          </mat-error>
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input
+            
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input         
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input            
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input            
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+        <!-- ??? -->
+        <mat-form-field appearance="fill" class="formInput">
+          <mat-label>???</mat-label>
+          <input          
+            matInput
+            placeholder=""
+            formControlName="mmm"
+            class="inputColor"
+          />
+        </mat-form-field>
+      </form>        
+    </mat-card-content>
+  <!-- botao cadastrar do formulario -->
   <mat-card-actions>
-    <button class="mb-right" mat-raised-button (click)="register()">
+    <button class="mb-right cd" mat-raised-button (click)="register()">
       Cadastrar
     </button>
   </mat-card-actions>
 </mat-card>
+<br>
+<br>
+<!-- contatos de roda pe -->
+ <!-- <div class="contatos">
+    <div class="widget-item">
+        <h4 class="tl">Endereço</h4>
+        <div class=" rc">
+          <li>Rua do Rosário, 103 - 10º andar</li>
+          <li>Centro - Rio de Janeiro</li>
+          <li>CEP 20041-004</li>
+        </div>
+      </div>
+      <div class="widget-item">
+        <h4 class="tl">Telefones</h4>
+        <div class="  rc">
+          <li>+55 21 3559-0665</li>
+          <li>+55 21 3549-0465</li>
+        </div>
+      </div>
+      <div class="widget-item">
+        <h4 class="tl">E-mail</h4>
+        <div class=" rc">
+          <li>contato@sinn.com.br</li>
+        </div>
+      </div>
+      <div class="widget-item">
+        <h4 class="tl">Produtos relacionados</h4>
+        <div class=" rc">
+          <li> Sinn.wallet</li>
+          <li> Sinness</li>
+          <li> Sinntesis</li>
+          <li> Sinn.educa</li>
+          <li> Sinn.solutions</li>
+          <br>
+        </div>
+      </div>   -->
+      

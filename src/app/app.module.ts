@@ -34,6 +34,14 @@ import { JwtHelperService } from "@auth0/angular-jwt";
 import { HieraquiaContratoComponent } from "./contract/new-contract/hieraquia-contrato/hieraquia-contrato.component";
 import { ViewContractComponent } from "./contract/view-contract/view-contract.component";
 import { RegistroComponent } from './registro/registro.component';
+import { FooterComponent } from './footer/footer.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { SobreComponent } from './sobre/sobre.component';
+import { SolucoesComponent } from './solucoes/solucoes.component';
+import { ContatoComponent } from './contato/contato.component';
+import { ColucoeComponent } from './colucoe/colucoe.component';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -49,7 +57,15 @@ import { RegistroComponent } from './registro/registro.component';
     NumbersOnlyDirective,
     HieraquiaContratoComponent,
     ViewContractComponent,
-    RegistroComponent
+    RegistroComponent,
+    FooterComponent,
+    SobreComponent,
+    SolucoesComponent,
+    ContatoComponent,
+    ColucoeComponent,
+    HeaderComponent,
+
+    
   ],
   imports: [
     BrowserModule,
@@ -67,7 +83,8 @@ import { RegistroComponent } from './registro/registro.component';
     MatProgressSpinnerModule,
     QuillModule.forRoot(),
     ErrorKeyModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule,
   ],
   providers: [LoaderService, { provide: MAT_DATE_LOCALE, useValue: "pt-br" }],
   entryComponents: [

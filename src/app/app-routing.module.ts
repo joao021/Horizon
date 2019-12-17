@@ -4,6 +4,9 @@ import { EditContractComponent } from "./contract/edit-contract/edit-contract.co
 import { ContractComponent } from "./contract/contract.component";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { SobreComponent } from './sobre/sobre.component';
+import { SolucoesComponent } from './solucoes/solucoes.component';
+import { ContatoComponent } from './contato/contato.component';
 
 const routes: Routes = [
   {
@@ -21,7 +24,19 @@ const routes: Routes = [
   {
     path: "view/:id",
     component: ViewContractComponent
-  }
+  },
+  {
+    path: "sobre",
+    component: SobreComponent
+  },
+  {
+    path: "solucoes",
+    component: SolucoesComponent
+  },
+  {
+    path: "contato",
+    component: ContatoComponent
+  },
 ];
 
 @NgModule({

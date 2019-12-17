@@ -108,13 +108,29 @@ app-root {
   top: 0;
 }
 
-.bg {
-  background-image: url('src/assets/img2/page-bg/2.jpg');
+// .bg {
+//   background-image: url('src/assets/img2/page-bg/2.jpg');
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   background-size: 100%;
+//   width: 100%;
+//   height: 100%;
+//   flex: 1;
+// }
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #d82a4e !important;
+} // cor da linha
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #d82a4e !important;
+}
+.foot{
+  background-image: url('src/assets/img2/footer.jpeg');
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-  width: auto;
-  height: auto;
+  background-position: bottom center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
   flex: 1;
 }
 
