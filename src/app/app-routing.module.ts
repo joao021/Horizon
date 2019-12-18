@@ -1,3 +1,4 @@
+import { InicialComponent } from './inicial/inicial.component';
 import { RegistroComponent } from "./registro/registro.component";
 import { ViewContractComponent } from "./contract/view-contract/view-contract.component";
 import { EditContractComponent } from "./contract/edit-contract/edit-contract.component";
@@ -37,10 +38,17 @@ const routes: Routes = [
     path: "contato",
     component: ContatoComponent
   },
+  {
+    path: "",
+    component: InicialComponent
+  }
+ 
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  
+}

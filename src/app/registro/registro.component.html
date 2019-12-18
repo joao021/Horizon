@@ -1,17 +1,19 @@
-<div class="cadastro max_width">
-    <span class="fc ">
-    Faça seu cadastro
-  </span>
-  </div> 
-<mat-card class="filterMenu" >
+<div class="botaoGrande">
+  <div class="cadastro">
+    <span>
+      Faça seu cadastro
+    </span>
+  </div>
+</div>
+<mat-card class="filterMenu">
   <mat-card-header>
     <mat-card-title class="DP">Dados pessoais</mat-card-title>
     <mat-card-subtitle class="subtitle">
       Preencha os campos abaixo!
     </mat-card-subtitle>
   </mat-card-header>
-  <br>
-  <br>    
+  <br />
+  <br />
   <mat-card-content>
     <form class="formulario" [formGroup]="formulario">
       <!-- //Nome Completo -->
@@ -103,29 +105,21 @@
       <mat-form-field appearance="fill" class="formInput">
         <mat-label>Título de eleitor</mat-label>
         <input
-          required
           matInput
           placeholder=""
           formControlName="t_e"
           class="inputColor"
         />
-        <mat-error>
-          {{ formulario.get("t_e")["errors"] | errorKey }}
-        </mat-error>
       </mat-form-field>
       <!-- Zona/Seção -->
       <mat-form-field appearance="fill" class="formInput">
         <mat-label>Zona/Seção</mat-label>
         <input
-          required
           matInput
           placeholder=""
           formControlName="zs"
           class="inputColor"
         />
-        <mat-error>
-          {{ formulario.get("zs")["errors"] | errorKey }}
-        </mat-error>
       </mat-form-field>
       <!-- Data de nascimento -->
       <mat-form-field appearance="fill" class="formInput">
@@ -141,188 +135,98 @@
           {{ formulario.get("d_n")["errors"] | errorKey }}
         </mat-error>
       </mat-form-field>
+      <!-- Endereço -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Endereço</mat-label>
+        <input
+        required
+        matInput
+        placeholder=""
+        formControlName="end"
+        class="inputColor"
+        />
+        <mat-error>
+            {{ formulario.get("end")["errors"] | errorKey }}
+          </mat-error>
+        
+      </mat-form-field>
+      <!-- CEP -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>CEP</mat-label>
+        <input 
+        required         
+        matInput
+        placeholder=""
+        formControlName="cep"
+        class="inputColor"
+        />
+        <mat-error>
+            {{ formulario.get("cep")["errors"] | errorKey }}
+          </mat-error>
+      </mat-form-field>
+    </form>
+    <br />
+    <br />
+    <br />
+    <mat-card-title class="DP">Outros Dados</mat-card-title>
+    <br />
+    <br />
+    <br />
+    <form class="formulario" [formGroup]="formulario">
+      <!-- //Numero do passaporte -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Número do passaporte</mat-label>
+        <input
+        matInput
+        placeholder=""
+        formControlName="np"
+        class="inputColor"
+        />
+      </mat-form-field>
+      <!-- carteira de habilitação -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Carteira de Habilitação</mat-label>
+        <input
+        matInput
+        placeholder=""
+        formControlName="ch"
+        class="inputColor"
+        />
+      </mat-form-field>
+      <!-- Nome da mae -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Nome da Mãe</mat-label>
+        <input
+        matInput
+        placeholder=""
+        formControlName="nomemae"
+        class="inputColor"
+        />
+      </mat-form-field>
+      <!-- Nome do Pai -->
+      <mat-form-field appearance="fill" class="formInput">
+        <mat-label>Nome do Pai</mat-label>
+        <input
+        matInput
+        placeholder=""
+        formControlName="nomepai"
+        class="inputColor"
+        />
+      </mat-form-field>
       <!-- Nacionalidade -->
       <mat-form-field appearance="fill" class="formInput">
         <mat-label>Nacionalidade</mat-label>
         <input
-          required
           matInput
           placeholder=""
           formControlName="nacionalidade"
           class="inputColor"
         />
-        <mat-error>
-          {{ formulario.get("nacionalidade")["errors"] | errorKey }}
-        </mat-error>
+  
       </mat-form-field>
-      <!-- Nome do pai -->
-      <mat-form-field appearance="fill" class="formInput">
-        <mat-label>Nome do pai</mat-label>
-        <input
-          required
-          matInput
-          placeholder=""
-          formControlName="nomepai"
-          class="inputColor"
-        />
-        <mat-error>
-          {{ formulario.get("nomepai")["errors"] | errorKey }}
-        </mat-error>
-      </mat-form-field>
-      <!-- Nome da mãe -->
-      <mat-form-field appearance="fill" class="formInput">
-        <mat-label>Nome da mãe</mat-label>
-        <input
-          required
-          matInput
-          placeholder=""
-          formControlName="nomemae"
-          class="inputColor"
-        />
-        <mat-error>
-          {{ formulario.get("nomemae")["errors"] | errorKey }}
-        </mat-error>
-      </mat-form-field>
+      
     </form>
-      <br>
-      <br>
-      <br>
-      <mat-card-title class="DP">Outros Dados</mat-card-title>
-      <br>
-      <br>
-      <br>
-      <form class="formulario" [formGroup]="formulario">
-        <!-- //Numero do passaporte -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>Número do passaporte</mat-label>
-          <input
-            required
-            matInput
-            placeholder=""
-            formControlName="np"
-            class="inputColor"
-          />
-          <mat-error>
-            {{ formulario.get("np")["errors"] | errorKey }}
-          </mat-error>
-        </mat-form-field>
-        <!-- carteira de habilitação -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>Carteira de Habilitação</mat-label>
-          <input
-            required
-            matInput
-            placeholder=""
-            formControlName="ch"
-            class="inputColor"
-          />
-          <mat-error>
-            {{ formulario.get("ch")["errors"] | errorKey }}
-          </mat-error>
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input
-            
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input         
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input            
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input            
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <!-- ??? -->
-        <mat-form-field appearance="fill" class="formInput">
-          <mat-label>???</mat-label>
-          <input          
-            matInput
-            placeholder=""
-            formControlName="mmm"
-            class="inputColor"
-          />
-        </mat-form-field>
-      </form>        
-    </mat-card-content>
+  </mat-card-content>
   <!-- botao cadastrar do formulario -->
   <mat-card-actions>
     <button class="mb-right cd" mat-raised-button (click)="register()">
@@ -332,38 +236,4 @@
 </mat-card>
 <br>
 <br>
-<!-- contatos de roda pe -->
- <!-- <div class="contatos">
-    <div class="widget-item">
-        <h4 class="tl">Endereço</h4>
-        <div class=" rc">
-          <li>Rua do Rosário, 103 - 10º andar</li>
-          <li>Centro - Rio de Janeiro</li>
-          <li>CEP 20041-004</li>
-        </div>
-      </div>
-      <div class="widget-item">
-        <h4 class="tl">Telefones</h4>
-        <div class="  rc">
-          <li>+55 21 3559-0665</li>
-          <li>+55 21 3549-0465</li>
-        </div>
-      </div>
-      <div class="widget-item">
-        <h4 class="tl">E-mail</h4>
-        <div class=" rc">
-          <li>contato@sinn.com.br</li>
-        </div>
-      </div>
-      <div class="widget-item">
-        <h4 class="tl">Produtos relacionados</h4>
-        <div class=" rc">
-          <li> Sinn.wallet</li>
-          <li> Sinness</li>
-          <li> Sinntesis</li>
-          <li> Sinn.educa</li>
-          <li> Sinn.solutions</li>
-          <br>
-        </div>
-      </div>   -->
-      
+<br>

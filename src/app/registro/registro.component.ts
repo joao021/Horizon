@@ -1,3 +1,4 @@
+import { Router } from "@angular/router";
 import { NotificationService } from "./../config/notification.service";
 import {
   FormGroup,
@@ -16,7 +17,8 @@ export class RegistroComponent implements OnInit {
   formulario: FormGroup;
   constructor(
     private fb: FormBuilder,
-    private alertService: NotificationService
+    private alertService: NotificationService,
+    private rota: Router
   ) {}
 
   ngOnInit() {
@@ -32,23 +34,18 @@ export class RegistroComponent implements OnInit {
       rg: new FormControl("", [Validators.required]),
       o_e: new FormControl("", [Validators.required]),
       data_e: new FormControl("", [Validators.required]),
-      t_e: new FormControl("", [Validators.required]),
-      zs: new FormControl("", [Validators.required]),
+      t_e: new FormControl("",),
+      zs: new FormControl("",),
       d_n: new FormControl("", [Validators.required]),
       nacionalidade: new FormControl("", [Validators.required]),
       nomepai: new FormControl("", [Validators.required]),
       nomemae: new FormControl("", [Validators.required]),
       np: new FormControl("", [Validators.required]),
       ch: new FormControl("", [Validators.required]),
+      cep: new FormControl("", [Validators.required]),
+      end: new FormControl("", [Validators.required]),
       mmm: new FormControl(""),
-
-
-
     });
-  }
-
-  teste(){
-    console.log('SinnId');
   }
 
   register() {

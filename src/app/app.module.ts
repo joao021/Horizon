@@ -39,8 +39,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { SobreComponent } from './sobre/sobre.component';
 import { SolucoesComponent } from './solucoes/solucoes.component';
 import { ContatoComponent } from './contato/contato.component';
-import { ColucoeComponent } from './colucoe/colucoe.component';
 import { HeaderComponent } from './header/header.component';
+import { InicialComponent } from './inicial/inicial.component';
+
 
 
 @NgModule({
@@ -62,8 +63,8 @@ import { HeaderComponent } from './header/header.component';
     SobreComponent,
     SolucoesComponent,
     ContatoComponent,
-    ColucoeComponent,
     HeaderComponent,
+    InicialComponent,
 
     
   ],
