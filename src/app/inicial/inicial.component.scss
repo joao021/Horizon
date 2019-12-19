@@ -1,3 +1,138 @@
-.bg {
-    background-image: url('/src/assets/img2/page-bg/bg.jpg');
+.inicio {
+  position: absolute;
+  right: 50%;
+  left: 46%;
+  top: 15%;
+}
+.responsive {
+  width: 10%;
+  height: auto;
+}
+.mensagem {
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  position: relative;
+  margin-top: -30em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tit {
+  font-size: 350%;
+}
+.subt {
+  margin-top: -2%;
+  font-size: 130%;
+}
+.transparente {
+  background-color: rgba(10, 23, 55, 0);
+  text-decoration: none;
+  box-shadow: none;
+}
+.formulario {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: row;
+}
+.filterMenu {
+  //position: relative;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 5%;
+  // display: flex;
+  box-shadow: 0px 0px 0px 0px;
+  background-color: rgba(10, 23, 55, 0);
+  text-decoration: none;
+  box-shadow: none;
+}
+.inputColor {
+  background-color: white;
+  size: 1.6em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  align-items: center;
+  padding: 10px;
+}
+.formInput {
+  font-size: 1.3em;
+  width: 40%;
+  color: #000;
+}
+.botao {
+  color: white;
+  background-color: #d82a4e;
+  box-shadow: none;
+  width: 10%;
+}
+.cd {
+  background-color: #d82a4e;
+  color: #fff;
+  height: 3em;
+  font-size: 100%;
+  font-weight: 500;
+  top: 20px;
+}
+.pl {
+  position: absolute;
+  left: 30%;
+  top: 90%;
+  color: #444444;
+  font-weight: 700;
+}
+.p {
+  padding-right: 30%;
+  position: absolute;
+  left: 19%;
+  top: 100%;
+  text-align: center;
+  
+}
+.cor {
+  color: #ff0000;
+}
+.cor2 {
+  color: #808080;
+}
+.p1 {
+  font-size: 14.1px;
+  color: #878787;
+  line-height: 2.2;
+  font-weight: 400;
+}
+.kl {
+  margin-top: 10%;
+}
+.responsiva {
+  width: 47%;
+  float: left; 
+  padding: 1%; 
+}
+@media only screen and (min-width: 768px) {
+  .letra{
+    width: 100%;
+    
+  }
+}
+@media only screen and (max-width: 768px) {
+  .letra{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .letra{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .letra{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .letra{
+    width: 100%;
+  }
 }

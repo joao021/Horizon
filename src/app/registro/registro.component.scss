@@ -117,6 +117,7 @@ ul {
   height: -90px;
   min-height: 180px;
   max-height: 80px;
+  margin-left: 3%;
   background-color: #d82a4e;
   font-family: "Raleway", sans-serif;
   color: white;
@@ -125,7 +126,7 @@ ul {
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  width: 70%;
+  width: 63%;
   min-width: 300px;
 }
 .container {
@@ -149,8 +150,8 @@ ul {
   justify-content: space-between;
 }
 .botaoMeio {
-  // position: relative;
-  // margin-top: 6%;
+   position: relative;
+   margin-top: 6%;
 }
 .barra {
   color: #fff;

@@ -17,8 +17,9 @@
 .footer-bottom {
     overflow: hidden;
     background: #edf4f6;
-    padding: 0% 0%;
-    margin-top: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: 600;
 }
 .footer-menu {
   list-style: none;
@@ -48,14 +49,11 @@
   font-size: 300%;
   align-items: center;
   justify-content: center;
-  //position: absolute;
-//   top: 37%;
-//   left: 20%;
   font-weight: 900;
 }
 .widget-item {
   width: 25%;
-  padding: 0 1
+  padding: 0% 1%;
 }
 .tl{
   font-size: 150%;
@@ -63,14 +61,11 @@
   font-weight: 600;
 }
 .rc{
-  
   color: #878787;
   text-align: -webkit-match-parent;
   list-style: none;
   padding: 0;
-  
-  
-   
+  font-size: 90%;   
 }
 li {
   text-align: -webkit-match-parent;
@@ -79,8 +74,9 @@ li {
   border-top: 3px solid #d82a4e;
   border-top-width: 100%;
   padding-top: 4%;
-  padding-left: 15%;
-  padding-right: 17%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

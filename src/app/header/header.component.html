@@ -1,5 +1,5 @@
 <div
-  class="bgr"
+  [ngClass]="{ 'bgr': !bgEstendido, 'bgrEstendido': bgEstendido }"
   [style.background-image]="'url(assets/img2/page-bg/' + bgImgName + ')'"
 >
   <div class="row">
@@ -37,7 +37,7 @@
           <li>
             <a class="inicial link-edit" href="">Página inicial</a>
             <span class="barra"> /</span>
-            <span class="msg"> Cadastro</span>
+            <span class="msg"> Cadastrar</span>
           </li>
         </ul>
       </div>

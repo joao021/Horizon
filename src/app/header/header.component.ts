@@ -9,14 +9,20 @@ import { Router, NavigationEnd } from "@angular/router";
 })
 export class HeaderComponent implements OnInit {
   bgImgName = "1.jpg";
+  bgEstendido = false;
   constructor(private router: Router) {
     this.router.events.subscribe(route => {
       if (route instanceof NavigationEnd) {
         const bgRoute = BGROUTES.find(elem => elem.path === route.url);
         if (bgRoute) {
           this.bgImgName = bgRoute.img;
+          if (bgRoute.estendido) {
+            this.bgEstendido = true;
+          } else {
+            this.bgEstendido = false;
+          }
         } else {
-          this.bgImgName = "1.jpg";
+          this.bgImgName = "bg-limpo.jpg";
         }
       }
     });

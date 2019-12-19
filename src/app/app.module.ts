@@ -21,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {
   MatToolbarModule,
   MatCardModule,
-  MatStepperModule
+  MatStepperModule,
+  MatInputModule
 } from "@angular/material";
 
 import { MyContractComponent } from "./contract/my-contract/my-contract.component";
@@ -86,6 +87,7 @@ import { InicialComponent } from './inicial/inicial.component';
     ErrorKeyModule,
     ReactiveFormsModule,
     FlexLayoutModule,
+    MatInputModule,
   ],
   providers: [LoaderService, { provide: MAT_DATE_LOCALE, useValue: "pt-br" }],
   entryComponents: [

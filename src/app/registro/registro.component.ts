@@ -37,18 +37,18 @@ export class RegistroComponent implements OnInit {
       t_e: new FormControl("",),
       zs: new FormControl("",),
       d_n: new FormControl("", [Validators.required]),
-      nacionalidade: new FormControl("", [Validators.required]),
-      nomepai: new FormControl("", [Validators.required]),
-      nomemae: new FormControl("", [Validators.required]),
-      np: new FormControl("", [Validators.required]),
-      ch: new FormControl("", [Validators.required]),
-      cep: new FormControl("", [Validators.required]),
-      end: new FormControl("", [Validators.required]),
+      nacionalidade: new FormControl("",),
+      nomepai: new FormControl("",),
+      nomemae: new FormControl("",),
+      np: new FormControl("",),
+      ch: new FormControl("",),
+      cep: new FormControl("",),
+      end: new FormControl("",),
       mmm: new FormControl(""),
     });
   }
 
   register() {
-    this.alertService.showSuccess("Documento salvo com sucesso");
+    this.alertService.showSuccess("Cadastrado com sucesso");
   }
 }
