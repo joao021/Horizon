@@ -209,23 +209,123 @@ body {
   margin-right: 17%;
   margin-left: 17%;
   justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
   // color: #878787;
 }
 .categorie-item :hover {
   background: #d82a4e;
+  transition-delay: 0s;
   color: white;
-  .a {
+  .corsub {
     color: white;
   }
-  .span {
+  .span-imagens {
+    color: white;
+  }
+  .hletra {
     color: white;
   }
 }
-.a {
+.corsub {
   font-size: 84%;
   color: #878787;
+  
 }
-.span {
+.span-imagens {
   color: #d82a4e;
+  font-weight: 500;
+  font-size: 18px;
+  
 }
+// .di :hover {
+//   background: #d82a4e;
+//   transition-delay: 0s;
+// }
+.hletra {
+  color: #474747;
+}
+.espaço {
+  background-size: 10%;
+}
+.ci-text {
+  padding: 40px 35px;
+}
+.signup-section {
+  background: #d82a4e;
+  position: relative;
+}
+.spad {
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+.signup-section .signup-bg {
+    position:absolute ;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+#container {
+  width: 47.8%;
+  height: 13%;
+}
+
+#container img {
+  width: 100%;
+  height: 52em;
+  
+}
+.signup-section .section-title {
+  padding: 0;
+  margin-bottom: 5%;
+}
+@media only screen and (max-width: 767px) {
+.section-title {
+    padding: 0;
+  }
+}
+.section-title {
+  text-align: center;
+  padding: 0 9%;
+  margin-bottom: 8%;
+}
+.text-white {
+  color: #fff!important;
+}
+.text-left {
+  text-align: left!important;
+}
+ .signup-warp {
+  padding: 0 100px;
+ }
+.col-lg-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.txtboy {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-right: 18%;
+  padding-left: 5%;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+}
+.size1 {
+  font-size: 270%;
+}
+.size2 {
+  font-size: 130%;
+}
+
+
 

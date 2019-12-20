@@ -8,7 +8,7 @@ import {
   FormBuilder,
   FormControl,
   Validators
-} from "@angular/forms";
+} from '@angular/forms';
 
 @Component({
   selector: 'app-inicial',
@@ -27,12 +27,10 @@ export class InicialComponent implements OnInit {
     this.mountForm();
   }
 
-
-mountForm() {
-  this.formulario = this.fb.group({
-    nome: new FormControl("",),
-    email: new FormControl("",),
-  });
+  mountForm() {
+    this.formulario = this.fb.group({
+      nome: new FormControl(''),
+      email: new FormControl('')
+    });
+  }
 }
-}
-
