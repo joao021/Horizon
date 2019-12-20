@@ -42,6 +42,7 @@ import { SolucoesComponent } from './solucoes/solucoes.component';
 import { ContatoComponent } from './contato/contato.component';
 import { HeaderComponent } from './header/header.component';
 import { InicialComponent } from './inicial/inicial.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 
 
@@ -66,6 +67,7 @@ import { InicialComponent } from './inicial/inicial.component';
     ContatoComponent,
     HeaderComponent,
     InicialComponent,
+    BreadcrumbComponent,
 
     
   ],
