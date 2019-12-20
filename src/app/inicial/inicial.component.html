@@ -1,66 +1,109 @@
 <section>
-<img
-  class="inicio responsive"
-  src="/assets/img2/img-sinnid-inicio.png"
-  alt=""
-/>
-<div class="mensagem">
-  <mat-card class="filterMenu">
-    <mat-card-header>
-      <mat-card-title class="tit DP"
-        >Acesse seus dados de uma nova forma</mat-card-title
-      >
-      <mat-card-subtitle class="subtitle subt">
-        Se cadastre agora e diga Sinn para a maior rede BLOCKCHAIN do país!
-      </mat-card-subtitle>
-    </mat-card-header>
-    <br />
-    <br />
-    <mat-card-content>
-      <form class="formulario" [formGroup]="formulario">
-        <mat-form-field appearance="matPrefix" class="formInput">
-          <input
-            matInput
-            placeholder="Nome Completo"
-            formControlName="nome"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <br />
-        <mat-form-field appearance="matPrefix" class="formInput">
-          <input
-            matInput
-            placeholder="E-mail"
-            formControlName="email"
-            class="inputColor"
-          />
-        </mat-form-field>
-        <button class="cd" mat-raised-button (click)="register()">
+  <img
+    class="inicio responsive"
+    src="/assets/img2/img-sinnid-inicio.png"
+    alt=""
+  />
+  <div class="mensagem">
+    <mat-card class="filterMenu">
+      <mat-card-header>
+        <div class="header-center">
+          <mat-card-title class="tit"
+            >Acesse seus dados de uma nova forma</mat-card-title
+          >
+          <mat-card-subtitle class="subtitle subt">
+            Se cadastre agora e diga Sinn para a maior rede BLOCKCHAIN do país!
+          </mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <br />
+      <br />
+      <mat-card-content>
+        <form class="formulario" [formGroup]="formulario">
+          <!-- nome completo -->
+          <div class="flex">
+            <mat-form-field appearance="matPrefix" class="formInput">
+              <input
+                matInput
+                placeholder="Nome Completo"
+                formControlName="nome"
+                class="inputColor"
+              />
+            </mat-form-field>
+            <br />
+            <!-- email -->
+            <mat-form-field appearance="matPrefix" class="formInput">
+              <input
+                matInput
+                placeholder="E-mail"
+                formControlName="email"
+                class="inputColor"
+              />
+            </mat-form-field>
+          </div>
+          <button class="cd" mat-raised-button (click)="register()">
             Cadastrar
-        </button>
-      </form>
-    </mat-card-content>
-  </mat-card>
-</div>
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <label class="letra responsiva">
-        <h1 class="pl">O que o <span class="cor">sinn</span><span class="cor2">.id</span> faz por você</h1>
-        <p class="p p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.            </p>
-    </label>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<div class="letra responsiva">
+  <h1 class="pl">
+    O que o <span class="cor">sinn</span><span class="cor2">.id</span> faz por
+    você
+  </h1> 
+  <p class="p p1">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada
+    lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula
+    sapien. Suspendisse cursus faucibus finibus.
+  </p>
+</div>
+<!-- <div class="categorie-item">
+  <div class="ti">
+    <img class="im" src="/assets/img2/categories/1.jpg" alt="">
+    <img class="im" src="/assets/img2/categories/2.jpg" alt="">
+    <img class="im" src="/assets/img2/categories/3.jpg" alt="">
+    <div class="txt1 bgi ci-text">
+      <h3>Protege seus dados</h3>            
+      <p>Lorem ipsum dolor sit amet, consectetur</p>
+      <span>Segurança via blockchain</span>
+    </div>
+  </div>
+</div>
+  -->
+<div class="row">
+  <div class="categorie-item ci-thumb">
+    <img src="/assets/img2/categories/1.jpg" alt="">
+    <div>
+        <h3>Protege seus dados</h3>            
+        <p class="a">Lorem ipsum dolor sit amet, consectetur</p>
+        <span class="span">Segurança via blockchain</span>
+    </div>
+  </div>
+  <div class="categorie-item ci-thumb">
+    <img src="/assets/img2/categories/2.jpg" alt="">
+    <div>
+      <h3>Garante propriedade</h3>
+      <p class="a">Lorem ipsum dolor sit amet, consectetur</p>
+      <span class="span">Chave privada</span>
+    </div>
+  </div>
+  <div class="categorie-item ci-thumb">
+    <img src="/assets/img2/categories/3.jpg" alt="">
+    <div>
+        <h3>Mobilidade</h3>
+        <p class="a">Lorem ipsum dolor sit amet, consectetur</p>
+        <span class="span">Aonde você estiver</span>
+    </div>
+  </div>
+</div>

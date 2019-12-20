@@ -1,8 +1,7 @@
 .inicio {
   position: absolute;
-  right: 50%;
-  left: 46%;
-  top: 15%;
+  left: 44%;
+  top: 20%;
 }
 .responsive {
   width: 10%;
@@ -19,10 +18,16 @@
 }
 .tit {
   font-size: 350%;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
 }
 .subt {
   margin-top: -2%;
   font-size: 130%;
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  font-family: "Raleway", sans-serif;
 }
 .transparente {
   background-color: rgba(10, 23, 55, 0);
@@ -38,28 +43,33 @@
   row-gap: row;
 }
 .filterMenu {
-  //position: relative;
-  padding-left: 20%;
+  padding-left: 18%;
   padding-right: 20%;
   margin-top: 5%;
-  // display: flex;
   box-shadow: 0px 0px 0px 0px;
   background-color: rgba(10, 23, 55, 0);
   text-decoration: none;
   box-shadow: none;
 }
+.header-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .inputColor {
   background-color: white;
-  size: 1.6em;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  size: 1.2em;
+  padding-top: 4%;
+  padding-bottom: 4%;
   align-items: center;
-  padding: 10px;
+  // padding: 10px;
 }
 .formInput {
-  font-size: 1.3em;
-  width: 40%;
-  color: #000;
+  font-size: 1.2em;
+  padding-left: 5%;
+  // width: 40%;
+  color: black;
+  width: 19vw;
 }
 .botao {
   color: white;
@@ -69,26 +79,30 @@
 }
 .cd {
   background-color: #d82a4e;
+
   color: #fff;
-  height: 3em;
+  height: 3.5em;
+  width: 10em;
   font-size: 100%;
   font-weight: 500;
   top: 20px;
 }
 .pl {
-  position: absolute;
-  left: 30%;
+  // position: absolute;
+  left: 33%;
   top: 90%;
   color: #444444;
   font-weight: 700;
+  font-size: 300%;
+  font-weight: 600;
+  padding-left: 29%;
 }
 .p {
-  padding-right: 30%;
-  position: absolute;
+  padding-left: 24%;
+  // position: absolute;
   left: 19%;
   top: 100%;
   text-align: center;
-  
 }
 .cor {
   color: #ff0000;
@@ -106,33 +120,112 @@
   margin-top: 10%;
 }
 .responsiva {
-  width: 47%;
-  float: left; 
-  padding: 1%; 
+  width: 50%;
+  // float: left;
+  margin-bottom: 2%;
+  margin-left: 18%;
 }
-@media only screen and (min-width: 768px) {
-  .letra{
-    width: 100%;
-    
+// @media only screen and (min-width: 768px) {
+//   .letra {
+
+//   }
+// }
+// @media only screen and (max-width: 768px) {
+//   .letra {
+
+//   }
+// }
+// @media only screen and (max-width: 768px) {
+//   .letra {
+
+//   }
+// }
+// @media only screen and (max-width: 768px) {
+//   .letra {
+
+//   }
+// }
+// @media only screen and (max-width: 768px) {
+//   .letra {
+
+//   }
+// }
+.flex {
+  display: flex;
+}
+.ti {
+  justify-content: space-between;
+  //   margin-left: 17%;
+  //   padding-bottom: 8%;
+}
+.im {
+  padding: 1%;
+}
+.categorie-item .ci-text {
+  padding: 40px 35px;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+.txt1 {
+  position: absolute;
+  left: 19%;
+}
+.categorie-item {
+  margin-bottom: 34px;
+  background: #edf4f6;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.categorie-item .ci-thumb {
+  background-size: cover;
+  height: 148px;
+  -webkit-transition: all 0.01s;
+  -o-transition: all 0.01s;
+  transition: all 0.01s;
+}
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 17%;
+  margin-left: 17%;
+  justify-content: space-between;
+  // color: #878787;
+}
+.categorie-item :hover {
+  background: #d82a4e;
+  color: white;
+  .a {
+    color: white;
+  }
+  .span {
+    color: white;
   }
 }
-@media only screen and (max-width: 768px) {
-  .letra{
-    width: 100%;
-  }
+.a {
+  font-size: 84%;
+  color: #878787;
 }
-@media only screen and (max-width: 768px) {
-  .letra{
-    width: 100%;
-  }
+.span {
+  color: #d82a4e;
 }
-@media only screen and (max-width: 768px) {
-  .letra{
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .letra{
-    width: 100%;
-  }
-}
+
