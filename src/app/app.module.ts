@@ -43,6 +43,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { HeaderComponent } from './header/header.component';
 import { InicialComponent } from './inicial/inicial.component';
 import { LoginComponent } from './login/login.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 
 
@@ -68,8 +69,7 @@ import { LoginComponent } from './login/login.component';
     HeaderComponent,
     InicialComponent,
     LoginComponent,
-
-    
+    BreadcrumbComponent,  
   ],
   imports: [
     BrowserModule,

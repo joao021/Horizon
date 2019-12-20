@@ -2,10 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import { NotificationService } from '../config/notification.service';
 import { Router } from '@angular/router';
-
-
-
-
 @Component({
   selector: 'app-inicial',
   templateUrl: './inicial.component.html',
@@ -23,12 +19,10 @@ export class InicialComponent implements OnInit {
     this.mountForm();
   }
 
-
-mountForm() {
-  this.formulario = this.fb.group({
-    nome: new FormControl("",),
-    email: new FormControl("",),
-  });
+  mountForm() {
+    this.formulario = this.fb.group({
+      nome: new FormControl(''),
+      email: new FormControl('')
+    });
+  }
 }
-}
-
