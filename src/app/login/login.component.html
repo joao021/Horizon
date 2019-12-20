@@ -1,0 +1,58 @@
+<section>
+<img class="inicio responsivo" 
+src="/assets/img2/img-sinnid-login.png" 
+alt=""
+>
+<div class="mensagem">
+    <mat-card class="filterMenu">
+      <mat-card-header>
+        <div class="header-center">
+          <mat-card-title class="tit"
+            >Seja Bem-Vindo</mat-card-title
+          >
+          <mat-card-subtitle class="subtitle subt">
+            Entre com seus dados para efetuar login.
+          </mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <br />
+      <br />
+      <mat-card-content>
+        <form class="formulario" [formGroup]="formulario">
+          <!-- Email -->
+          <div class="flex">
+            <mat-form-field appearance="matPrefix" class="formInput">
+              <input
+                required
+                matInput
+                placeholder="E-mail"
+                formControlName="email"
+                class="inputColor"
+              />
+              <mat-error>
+                {{ formulario.get("email")["errors"] | errorKey }}
+              </mat-error>
+            </mat-form-field>
+            <br />
+            <!-- Senha -->
+            <mat-form-field appearance="matPrefix" class="formInput">
+              <input
+                required
+                matInput
+                placeholder="Senha"
+                formControlName="senha"
+                class="inputColor"
+              />
+              <mat-error>
+                {{ formulario.get("senha")["errors"] | errorKey }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <button class="cd" mat-raised-button (click)="register()">
+            Entrar
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

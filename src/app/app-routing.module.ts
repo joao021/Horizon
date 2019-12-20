@@ -1,3 +1,4 @@
+import { LoginComponent } from './login/login.component';
 import { InicialComponent } from './inicial/inicial.component';
 import { RegistroComponent } from "./registro/registro.component";
 import { ViewContractComponent } from "./contract/view-contract/view-contract.component";
@@ -41,7 +42,12 @@ const routes: Routes = [
   {
     path: "",
     component: InicialComponent
-  }
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+
  
 ];
 

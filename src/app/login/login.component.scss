@@ -1,0 +1,132 @@
+.inicio {
+    position: absolute;
+    left: 44%;
+    top: 20%;
+  }
+  .responsive {
+    width: 10%;
+    height: auto;
+  }
+  .mensagem {
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    position: relative;
+    margin-top: -32em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1em;
+  }
+  .tit {
+    font-size: 350%;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-family: "Raleway", sans-serif;
+  }
+  .subt {
+    margin-top: -2%;
+    font-size: 130%;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-family: "Raleway", sans-serif;
+  }
+  .transparente {
+    background-color: rgba(10, 23, 55, 0);
+    text-decoration: none;
+    box-shadow: none;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: row;
+  }
+  .filterMenu {
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 0px 0px;
+    background-color: rgba(10, 23, 55, 0);
+    text-decoration: none;
+    box-shadow: none;
+  }
+  .header-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 23%;
+  }
+  .inputColor {
+    background-color: white;
+    size: 1.2em;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    align-items: center;
+    // padding: 10px;
+  }
+  .formInput {
+    font-size: 1.2em;
+    padding-left: 2%;
+    // width: 40%;
+    color: black;
+    width: 19vw;
+  }
+  .botao {
+    color: white;
+    background-color: #d82a4e;
+    box-shadow: none;
+    width: 10%;
+  }
+  .cd {
+    background-color: #d82a4e;
+    margin-left: 1em;
+    color: #fff;
+    height: 3.5em;
+    width: 10em;
+    font-size: 100%;
+    font-weight: 500;
+    top: 20px;
+  }
+  .pl {
+    // position: absolute;
+    left: 33%;
+    top: 90%;
+    color: #444444;
+    font-weight: 700;
+    font-size: 300%;
+    font-weight: 600;
+    padding-left: 29%;
+  }
+  .p {
+    padding-left: 24%;
+    // position: absolute;
+    left: 19%;
+    top: 100%;
+    text-align: center;
+  }
+  .cor {
+    color: #ff0000;
+  }
+  .cor2 {
+    color: #808080;
+  }
+  .p1 {
+    font-size: 14.1px;
+    color: #878787;
+    line-height: 2.2;
+    font-weight: 400;
+  }
+  .kl {
+    margin-top: 10%;
+  }
+  .responsiva {
+    width: 50%;
+    // float: left;
+    margin-bottom: 2%;
+    margin-left: 18%;
+  }
+  .flex {
+    display: flex;
+}

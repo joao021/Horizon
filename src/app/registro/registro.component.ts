@@ -1,12 +1,8 @@
-import { Router } from "@angular/router";
-import { NotificationService } from "./../config/notification.service";
-import {
-  FormGroup,
-  FormBuilder,
-  FormControl,
-  Validators
-} from "@angular/forms";
-import { Component, OnInit } from "@angular/core";
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { NotificationService } from '../config/notification.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: "app-registro",

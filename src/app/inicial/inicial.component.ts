@@ -1,14 +1,10 @@
-import { Router } from '@angular/router';
-import { NotificationService } from './../config/notification.service';
-import { AlertService } from './../../shared/alert.service';
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { NotificationService } from '../config/notification.service';
+import { Router } from '@angular/router';
 
-import {
-  FormGroup,
-  FormBuilder,
-  FormControl,
-  Validators
-} from "@angular/forms";
+
+
 
 @Component({
   selector: 'app-inicial',
