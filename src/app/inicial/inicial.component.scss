@@ -62,12 +62,10 @@
   padding-top: 4%;
   padding-bottom: 4%;
   align-items: center;
-  // padding: 10px;
 }
 .formInput {
   font-size: 1.2em;
   padding-left: 5%;
-  // width: 40%;
   color: black;
   width: 19vw;
 }
@@ -88,7 +86,6 @@
   top: 20px;
 }
 .pl {
-  // position: absolute;
   left: 33%;
   top: 90%;
   color: #444444;
@@ -99,7 +96,6 @@
 }
 .p {
   padding-left: 24%;
-  // position: absolute;
   left: 19%;
   top: 100%;
   text-align: center;
@@ -121,42 +117,16 @@
 }
 .responsiva {
   width: 50%;
-  // float: left;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
+  margin-top: 5%;
   margin-left: 18%;
 }
-// @media only screen and (min-width: 768px) {
-//   .letra {
 
-//   }
-// }
-// @media only screen and (max-width: 768px) {
-//   .letra {
-
-//   }
-// }
-// @media only screen and (max-width: 768px) {
-//   .letra {
-
-//   }
-// }
-// @media only screen and (max-width: 768px) {
-//   .letra {
-
-//   }
-// }
-// @media only screen and (max-width: 768px) {
-//   .letra {
-
-//   }
-// }
 .flex {
   display: flex;
 }
 .ti {
   justify-content: space-between;
-  //   margin-left: 17%;
-  //   padding-bottom: 8%;
 }
 .im {
   padding: 1%;
@@ -207,10 +177,10 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: 17%;
+  margin-bottom: 5%;
   margin-left: 17%;
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;
-  // color: #878787;
 }
 .categorie-item :hover {
   background: #d82a4e;
@@ -237,10 +207,6 @@ body {
   font-size: 18px;
   
 }
-// .di :hover {
-//   background: #d82a4e;
-//   transition-delay: 0s;
-// }
 .hletra {
   color: #474747;
 }
@@ -255,8 +221,8 @@ body {
   position: relative;
 }
 .spad {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3.7%;
 
 }
 .signup-section .signup-bg {
@@ -266,13 +232,13 @@ body {
     z-index: 1;
 }
 #container {
-  width: 47.8%;
+  width: 50%;
   height: 13%;
 }
 
 #container img {
   width: 100%;
-  height: 51.8em;
+  height: 48.05em;
   
 }
 .signup-section .section-title {

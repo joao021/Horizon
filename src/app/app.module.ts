@@ -44,6 +44,7 @@ import { HeaderComponent } from './header/header.component';
 import { InicialComponent } from './inicial/inicial.component';
 import { LoginComponent } from './login/login.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { PoliticaComponent } from './politica/politica.component';
 
 
 
@@ -70,6 +71,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     InicialComponent,
     LoginComponent,
     BreadcrumbComponent,  
+    PoliticaComponent
   ],
   imports: [
     BrowserModule,
