@@ -42,6 +42,16 @@
   background-color: #29285d;
   color: yellow;
 }
+@media screen and (min-device-width: 1982px) and (max-device-width: 2570px) {
+  .mi {
+    margin-top: -86em !important;
+    margin-left: 9%;
+    width: 63%;
+  }
+ 
+}
+
+
 @media screen and (max-width: 1981px) {
   .material-icons {
     font-family: "Material Icons";
@@ -62,6 +72,11 @@
     background-color: #29285d;
     color: yellow;
 }
+.mi2 {
+  margin-top: -68em !important;
+  margin-left: 5%;
+  width: 70%;
+}
 
 }
 .corz{
@@ -78,7 +93,7 @@
   margin-left: 25%;
 }
 .mi {
-  margin-top: -86em !important;
+  margin-top: -86em;
   margin-left: 9%;
   width: 63%;
 }
