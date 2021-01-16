@@ -1,144 +1,22 @@
-<section>
-  <img
-    class="inicio responsive"
-    src="/assets/img2/img-sinnid-inicio.png"
-    alt=""
-  />
-  <div class="mensagem">
-    <mat-card class="filterMenu">
-      <mat-card-header>
-        <div class="header-center">
-          <mat-card-title class="tit"
-            >Acesse seus dados de uma nova forma</mat-card-title
-          >
-          <mat-card-subtitle class="subtitle subt">
-            Se cadastre agora e diga Sinn para a maior rede BLOCKCHAIN do país!
-          </mat-card-subtitle>
-        </div>
-      </mat-card-header>
-      <br />
-      <br />
-      <mat-card-content>
-        <form class="formulario" [formGroup]="formulario">
-          <!-- nome completo -->
-          <div class="flex">
-            <mat-form-field appearance="matPrefix" class="formInput">
-              <input
-                matInput
-                placeholder="Nome Completo"
-                formControlName="nome"
-                class="inputColor"
-              />
-            </mat-form-field>
-            <br />
-            <!-- email -->
-            <mat-form-field appearance="matPrefix" class="formInput">
-              <input
-                matInput
-                placeholder="E-mail"
-                formControlName="email"
-                class="inputColor"
-              />
-            </mat-form-field>
-          </div>
-          <button class="cd" mat-raised-button (click)="register()">
-            Cadastrar
-          </button>
-        </form>
-      </mat-card-content>
-    </mat-card>
-  </div>
-</section>
-<br />
-<br />
-<br />
-<br />
-<br />
-
-<br />
-<br />
+<div class="nova">
 <div class="letra responsiva">
   <h1 class="pl">
-    O que o <span class="cor">sinn</span><span class="cor2">.id</span> faz por
-    você
+  CURSOS
   </h1>
-  <p class="p p1">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada
-    lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula
-    sapien. Suspendisse cursus faucibus finibus.
-  </p>
 </div>
 <div class="row di">
-  <div class="categorie-item ci-thumb">
-    <img src="/assets/img2/categories/1.jpg" alt="" />
     <div class="ci-text">
-      <h3 class="hletra">Protege seus dados</h3>
-      <p class="corsub">Lorem ipsum dolor sit amet, consectetur</p>
-      <span class="span-imagens">Segurança via blockchain</span>
+      <img class="emp" src="/assets/img2/categories/1.png" alt="" />
+      <h3 class="hletra">Curso 1</h3>
     </div>
-  </div>
-  <div class="categorie-item ci-thumb">
-    <img src="/assets/img2/categories/2.jpg" alt="" />
-    <div class="ci-text">
-      <h3 class="hletra">Garante propriedade</h3>
-      <p class="corsub">Lorem ipsum dolor sit amet, consectetur</p>
-      <span class="span-imagens">Chave privada</span>
+    <div class=" bp ci-text">
+      <img class="emp" src="/assets/img2/categories/2.png" alt="" />
+      <h3 class="hletra">Curso 2</h3>
     </div>
-  </div>
-  <div class="categorie-item ci-thumb">
-    <img src="/assets/img2/categories/3.jpg" alt="" />
-    <div class="ci-text">
-      <h3 class="hletra">Mobilidade</h3>
-      <p class="corsub">Lorem ipsum dolor sit amet, consectetur</p>
-      <span class="span-imagens">Aonde você estiver</span>
+    <div class=" bp ci-text">
+      <img class="emp" src="/assets/img2/categories/3.png" alt="" />
+      <h3 class="hletra">Curso 3</h3>
     </div>
-  </div>
 </div>
-<section class="signup-section spad">
-  <div id="container" class="set-bg signup-bg signup-section">
-    <img src="/assets/img2/apple-boy.png" alt="" />
-  </div>
-  <div class="container-fluid">
-    <div class="txtboy">
-      <div class="col-lg-6">
-        <div class="signup-warp">
-          <div class="section-title text-white text-left">
-            <h1 class="size1">Proteja seus dados</h1>
-            <h4 class="size2">Lorem ipsum</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              malesuada lorem maximus mauris scelerisque, at rutrum nulla
-              dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
-            </p>
-            <br /><br />
-            <h4 class="size2">Lorem ipsum</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              malesuada lorem maximus mauris scelerisque, at rutrum nulla
-              dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
-            </p>
-            <br /><br />
-            <h4 class="size2">Lorem ipsum</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              malesuada lorem maximus mauris scelerisque, at rutrum nulla
-              dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<app-registro></app-registro>
+</div>

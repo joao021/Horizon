@@ -23,7 +23,7 @@ export class RegistroComponent implements OnInit {
 
   mountForm() {
     this.formulario = this.fb.group({
-      nome: new FormControl("", [Validators.required]),
+      nome: new FormControl(""),
       contractNumber: new FormControl("", [Validators.required]),
       email: new FormControl("", [Validators.required]),
       cpf: new FormControl("", [Validators.required]),

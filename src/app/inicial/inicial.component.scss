@@ -1,11 +1,18 @@
 .inicio {
   position: absolute;
-  left: 44%;
+  margin-left: 94%;
   top: 20%;
 }
+.nova {
+  margin-top: -7%;
+}
+
 .responsive {
   width: 10%;
   height: auto;
+}
+.emp {
+  width: 80%;
 }
 .mensagem {
   color: rgb(255, 255, 255);
@@ -37,10 +44,10 @@
 .formulario {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 117%;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: row;
+  margin-top: -19em !important;
 }
 .filterMenu {
   padding-left: 18%;
@@ -64,10 +71,10 @@
   align-items: center;
 }
 .formInput {
-  font-size: 1.2em;
-  padding-left: 5%;
-  color: black;
-  width: 19vw;
+  font-size: 1.3em;
+  width: 20%;
+  color: #000;
+  margin-left: 39%;
 }
 .botao {
   color: white;
@@ -86,13 +93,15 @@
   top: 20px;
 }
 .pl {
-  left: 33%;
-  top: 90%;
-  color: #444444;
+  left: -10%;
+  top: 23%;
+  color: #29285d;
   font-weight: 700;
   font-size: 300%;
   font-weight: 600;
-  padding-left: 29%;
+  padding-left: 49%;
+  position: absolute;
+  font-size: 48pt;
 }
 .p {
   padding-left: 24%;
@@ -172,15 +181,12 @@ body {
   background-position: top center;
 }
 .row {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin-right: 17%;
   margin-bottom: 5%;
-  margin-left: 17%;
+  margin-left: 10%;
   justify-content: space-between;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .categorie-item :hover {
   background: #d82a4e;
@@ -194,21 +200,23 @@ body {
   }
   .hletra {
     color: white;
+
   }
 }
 .corsub {
   font-size: 84%;
   color: #878787;
-  
+
 }
 .span-imagens {
   color: #d82a4e;
   font-weight: 500;
   font-size: 18px;
-  
+
 }
 .hletra {
   color: #474747;
+  margin-left: 33%;
 }
 .espaço {
   background-size: 10%;
@@ -239,7 +247,7 @@ body {
 #container img {
   width: 100%;
   height: 48.05em;
-  
+
 }
 .signup-section .section-title {
   padding: 0;

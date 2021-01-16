@@ -18,12 +18,69 @@
 .inputColor {
   size: 1.6em;
 }
+.mat-form-field {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 52%;
+  bottom: 16.4em;
+  background-color: #29285d;
+  color: yellow;
+}
+@media screen and (max-width: 1981px) {
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    left: 52%;
+    bottom: 12.8em;
+    background-color: #29285d;
+    color: yellow;
+}
+
+}
+.corz{
+  color: #29285d;
+  font-size: 20pt;
+}
 .formulario {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 117%;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: -19em !important;
+  margin-left: 25%;
+}
+.mi {
+  margin-top: -86em !important;
+  margin-left: 9%;
+  width: 63%;
 }
 .formInput {
   font-size: 1.3em;

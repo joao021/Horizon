@@ -1,9 +1,9 @@
 export const BGROUTES = [
-  { path: "/", img: "bg-limpo.jpg", estendido: true},
-  { path: "/login", img:"bg-limpo.jpg", estendido: true},
-  { path: "/sobre", img: "6.jpg" },
-  { path: "/registro", img: "2.jpg" },
-  { path: "/solucoes", img: "3.jpg" },
-  { path: "/contato", img: "4.jpg" },
-  { path: "/politica", img: "7.jpg" },
+  { path: "/", img: "1.png", estendido: true},
+  { path: "/login", img:"1.png", estendido: true},
+  { path: "/sobre", img: "1.png" },
+  { path: "/registro", img: "1.png" },
+  { path: "/solucoes", img: "1.png" },
+  { path: "/contato", img: "1.png" },
+  { path: "/politica", img: "1.png" },
 ];

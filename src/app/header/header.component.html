@@ -1,47 +1,7 @@
-
-<div
-  [ngClass]="{ 'bgr': !bgEstendido, 'bgrEstendido': bgEstendido }"
-  [style.background-image]="'url(assets/img2/page-bg/' + bgImgName + ')'"
->
-  <div class="row">
-    <div class="topo">
-      <div class="lg">
-        <div (click)="teste()" class="buttonl">
-          <img src="assets/img2/logo.png" alt="Sinn.id" />
-        </div>
-      </div>
-      <mat-toolbar class="navbar">
-        <div fxShow="true" fxHide.lt-md="true">
-          <a mat-button class="link link-edit" href="sobre">Sobre o id</a>
-          <a mat-button class="link link-edit" href="registro">Cadastre-se</a>
-          <a mat-button class="link link-edit" href="solucoes">Soluções</a>
-          <a mat-button class="link link-edit" href="contato">Contato</a>
-          <a mat-button class="botao" mat-raised-button href="login">Entrar</a>
-        </div>
-      </mat-toolbar>
-      <mat-sidenav-container fxFlexFill class="example-container">
-        <mat-sidenav fxLayout="column" mode="side" opened="false">
-          <div fxLayout="column">
-            <a mat-button class="link link-edit" href="#">Sobre o id</a>
-            <a mat-button class="link link-edit" href="#">Cadastre-se</a>
-            <a mat-button class="link link-edit" href="#">Soluções</a>
-            <a mat-button class="link link-edit" href="#">Contato</a>
-            <a mat-button class="botao" mat-raised-button href="login">Entrar</a>
-          </div>
-        </mat-sidenav>
-      </mat-sidenav-container>
-    </div>
-
-    <div>
-      <div class="pc">
-        <ul>
-          <li>
-            <a class="inicial link-edit" href="">Página inicial</a>
-            <span class="barra"> /</span>
-            <span class="msg"> Cadastrar</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="bg1" [ngStyle]="{backgroundImage:'url(./assets/img/page-bg/1.png)'}" >
+  <div [ngStyle]="{backgroundImage:'url(./assets/img/page-bg/2.png)'}"></div>
+</div>
+<div class="bg2" [ngStyle]="{backgroundImage:'url(./assets/img/page-bg/2.png)'}" >
+  <div [ngStyle]="{backgroundImage:'url(./assets/img/page-bg/2.png)'}"></div>
+  <h1 class="inicio">LOGIN</h1>
 </div>
