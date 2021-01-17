@@ -1,7 +1,13 @@
-import { Router } from '@angular/router';
 import { NotificationService } from './../config/notification.service';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import {
+  NavigationEnd,
+  Event,
+  Router,
+  NavigationStart,
+  NavigationError
+} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -13,7 +19,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private alertService: NotificationService,
-    private rota: Router
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -28,6 +34,7 @@ mountForm() {
   });
 }
 register() {
-  this.alertService.showSuccess("Cadastrado com sucesso");
+  this.router.navigate(['/']);
+  this.alertService.showSuccess("Login realizado com sucesso");
 }
 }
