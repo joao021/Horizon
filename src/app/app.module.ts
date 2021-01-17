@@ -34,7 +34,7 @@ import { QuillModule } from "ngx-quill";
 import { JwtHelperService } from "@auth0/angular-jwt";
 import { HieraquiaContratoComponent } from "./contract/new-contract/hieraquia-contrato/hieraquia-contrato.component";
 import { ViewContractComponent } from "./contract/view-contract/view-contract.component";
-import { RegistroComponent } from './registro/registro.component';
+import { RegistroComponent } from './busca/registro.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SobreComponent } from './sobre/sobre.component';
@@ -43,8 +43,9 @@ import { ContatoComponent } from './contato/contato.component';
 import { HeaderComponent } from './header/header.component';
 import { InicialComponent } from './inicial/inicial.component';
 import { LoginComponent } from './login/login.component';
-
+import { RegisterComponent } from './registro/register.component'
 import { PoliticaComponent } from './politica/politica.component';
+import { StorageService } from './sobre/storage.service';
 
 
 
@@ -63,6 +64,7 @@ import { PoliticaComponent } from './politica/politica.component';
     HieraquiaContratoComponent,
     ViewContractComponent,
     RegistroComponent,
+    RegisterComponent,
     FooterComponent,
     SobreComponent,
     SolucoesComponent,
@@ -92,7 +94,10 @@ import { PoliticaComponent } from './politica/politica.component';
     FlexLayoutModule,
     MatInputModule,
   ],
-  providers: [LoaderService, { provide: MAT_DATE_LOCALE, useValue: "pt-br" }],
+  providers: [
+    StorageService,
+    LoaderService, { provide: MAT_DATE_LOCALE, useValue: "pt-br" }
+  ],
   entryComponents: [
     DialogComponent,
     AddNewContractComponent,

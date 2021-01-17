@@ -1,6 +1,7 @@
 import { LoginComponent } from './login/login.component';
 import { InicialComponent } from './inicial/inicial.component';
-import { RegistroComponent } from "./registro/registro.component";
+import { RegistroComponent } from "./busca/registro.component";
+import { RegisterComponent } from "./registro/register.component";
 import { ViewContractComponent } from "./contract/view-contract/view-contract.component";
 import { EditContractComponent } from "./contract/edit-contract/edit-contract.component";
 import { ContractComponent } from "./contract/contract.component";
@@ -17,6 +18,10 @@ const routes: Routes = [
     component: ContractComponent
   },
   {
+    path: "register",
+    component: RegisterComponent
+  },
+  {
     path: "registro",
     component: RegistroComponent
   },
@@ -29,7 +34,7 @@ const routes: Routes = [
     component: ViewContractComponent
   },
   {
-    path: "sobre",
+    path: "registroCnpj",
     component: SobreComponent
   },
   {
@@ -53,7 +58,7 @@ const routes: Routes = [
     component:PoliticaComponent
   },
 
- 
+
 ];
 
 @NgModule({
@@ -61,5 +66,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  
+
 }

@@ -1,7 +1,15 @@
+import { RegisterComponent } from './../registro/register.component';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { NotificationService } from '../config/notification.service';
 import { Router } from '@angular/router';
+import { BlockType } from './../class/BlockType';
+import { URL_API } from './../url.api';
+import { Block } from './../class/Block';
+import { Document } from './../class/Document';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
 
 @Component({
@@ -12,6 +20,7 @@ import { Router } from '@angular/router';
 export class RegistroComponent implements OnInit {
   formulario: FormGroup;
   constructor(
+    private http: HttpClient,
     private fb: FormBuilder,
     private alertService: NotificationService,
     private rota: Router
@@ -44,7 +53,10 @@ export class RegistroComponent implements OnInit {
     });
   }
 
-  register() {
+  register(registro: RegisterComponent) {
+    return this.http.post<RegisterComponent>(`${URL_API}/update`, registro);
     this.alertService.showSuccess("Cadastrado com sucesso");
   }
 }
+
+

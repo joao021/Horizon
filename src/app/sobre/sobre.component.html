@@ -1,50 +1,52 @@
-<div class="botaoGrande">
-  <div class="cadastro">
-    <span>
-      Sobre a solução
-    </span>
-  </div>
-</div>
-<section class="sct sctpd">
-  <div class="alinhamento container">
-    <div>
-      <div>
+
+<section>
+
+  <div class="mensagem">
+      <mat-card class="filterMenu">
         <div>
-          <h3 class="idp">Identificação Pessoal</h3>
+          <img class="pk" src="./assets/img/Forma1.png" alt="F1">
         </div>
-        <div class="textos">
-        <p>A Sinn.id é uma solução de identificação pessoal, cujo objetivo é devolver aos usuários o controle dos seus dados pessoais e sensíveis, criando um local seguro para armazenamento e gestão.</p>
-        <p>A Sinn.id pode ser criada tanto para pessoas físicas como pessoas jurídicas, construindo uma camada de segurança em torno dos dados.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur. Phasellus sollicitudin et nunc eu efficitur. Sed ligula nulla, molestie quis ligula in, eleifend rhoncus ipsum. Donec ultrices, sem vel efficitur molestie, massa nisl posuere ipsum, ut vulputate mauris ligula a metus. Aenean vel congue diam, sed bibendum ipsum. Nunc vulputate aliquet tristique. </p>
-      </div>
-      </div>
+        <div>
+          <img class="yw" src="./assets/img/Forma2.png" alt="F2">
+        </div>
+        <div>
+          <img class="bvd" src="./assets/img/Forma3.png" alt="F3">
+          <p  class="text">BEM VINDO(A) DE VOLTA</p>
+        </div>
+        <mat-card-content>
+
+          <form class="formulario" [formGroup]="">
+            <!-- Email -->
+            <div class="bts" >
+              <mat-form-field appearance="outline" class="formInput">
+                <mat-label class="corz">CNPJ</mat-label>
+                <input
+                  required
+                  matInput
+                  placeholder="E-mail"
+                  formControlName="email"
+                  class="inputColor corz "
+                />
+              </mat-form-field>
+              <br />
+              <!-- Senha -->
+              <mat-form-field appearance="outline" class="formInput">
+                <mat-label class="corz">SENHA</mat-label>
+                <input
+                  type="password"
+                  required
+                  matInput
+                  placeholder=""
+                  formControlName="senha"
+                  class="inputColor"
+                />
+              </mat-form-field>
+            </div>
+            <button class="cd" mat-raised-button (click)="addItem()">
+              Entrar
+            </button>
+          </form>
+        </mat-card-content>
+      </mat-card>
     </div>
-  </div>
-</section>
-<h3 class="expandindo">Expandindo nossos serviços</h3>
-<div class="row">
-  <div class="categorie-item ci-thumb">
-    <h3 class="hletra img1">01. Blockchain</h3>
-    <img class="img1" src="/assets/img2/categories/1.jpg" alt="" />
-    <div class="ci-text">
-      <p class="corsub img1">Você possui o selo Sinn.personal, o que certifica a autenticidade de seus documentos e de sua identidade digital.</p>
-    </div>
-  </div>
-  <div class="categorie-item ci-thumb">
-    <h3 class="hletra">02. Machine Learning</h3>
-    <img src="/assets/img2/categories/2.jpg" alt="" />
-    <div class="ci-text">
-      <p class="corsub">Você possui o selo Sinn.financial, que atesta a sua integridade financeira e o seu nome no mercado.</p>
-    </div>
-  </div>
-  <div class="categorie-item ci-thumb">
-    <h3 class="hletra img3">03. AI e Análise de Dados</h3>
-    <img class="img3"src="/assets/img2/categories/3.jpg" alt="" />
-    <div class="ci-text">
-      <p class="corsub">Você possui o selo Sinn.legal, que atesta seus contratos e sua assinatura digital dentro do caráter da legitimidade e idoneidade.</p>
-    </div>
-  </div>
-</div>
+  </section>

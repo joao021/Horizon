@@ -27,4 +27,7 @@ mountForm() {
     email: new FormControl("", [Validators.required]),
   });
 }
+register() {
+  this.alertService.showSuccess("Cadastrado com sucesso");
+}
 }

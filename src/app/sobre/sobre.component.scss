@@ -1,75 +1,86 @@
-.cadastro {
-  display: flex;
-  height: -90px;
-  min-height: 180px;
-  max-height: 80px;
-  margin-left: 3%;
-  background-color: #d82a4e;
-  font-family: "Raleway", sans-serif;
-  color: white;
-  font: normal;
-  font-size: 300%;
+.inputColor {
+  background-color: white;
+  size: 1.2em;
+  padding-top: 4%;
+  padding-bottom: 4%;
   align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  width: 63%;
-  min-width: 300px;
+  // padding: 10px;
 }
-.botaoGrande {
+.formulario {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  justify-content: center;
-  margin-top: -90px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: row;
 }
-.sct {
-  display: block;
-  text-align: justify;
-  max-width: 40%;
-  margin-top: 4%;
-  flex: 0 0 100%;
+.flex {
+  display: flex;
+}
+.formInput {
+  font-size: 1.2em;
+  padding-left: 2%;
+  // width: 40%;
+  color: black;
+  width: 19vw;
+}
+.cd {
+  background-color: #29285d;
+  color: #fff;
+  height: 4.5em;
+  width: 11em;
+  font-size: 100%;
+  font-weight: 500;
+  bottom: 40%;
+  position: absolute;
+  left: 71%;
+}
+.bvd {
+  margin-left: -30%;
+  margin-bottom: 7%;
+  width: 26%;
   position: relative;
-  width: 100%;
-  min-height: 1px;
-  margin-right: 15%;
-  margin-left: 28%;
-  line-height: 1;
+  top: -14%;
+  left: 41%;
 }
-
-.idp {
-  font-size: 170%;
-  font-weight: 800;
-  color: #474747;
+.yw {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
 }
-.textos {
-  font-size: 14.1px;
-  color: #878787;
-  line-height: 2.2;
-  font-weight: 400;
+.pk {
+  position: absolute;
+  bottom: 49%;
+  width: 17%;
+  left: -2%;
+  top: 0%;
 }
-.expandindo {
-  margin-top: 3%;
-  margin-bottom: 1%px;
-  color: #d82a4e;
-  margin-left: 23%;
+.bts {
+  position: absolute;
+  top: 36%;
+  left: 51%;
 }
-.row {
-  display: flex;
-  margin-left: 35em;
-  margin-right: 28em;
-  margin-bottom: 5%;
+.text {
+    color: white;
+    position: absolute;
+    top: 22%;
+    left: 18%;
+    font-size: 40pt;
+    width: 15%;
+    font-weight: bold;
 }
-.img3 {
-  margin-left: 2%;
-  margin-right: 8%;
+.corz{
+  color: #29285d;
+  font-size: 20pt;
 }
-.corsub {
-  font-size: 14.1px;
-  color: #878787;
-  line-height: 2;
-  font-weight: 400;
-  max-width: 70%;
+@media screen and (max-width: 1981px) {
+  .text {
+    color: white;
+    position: absolute;
+    top: 21%;
+    left: 18%;
+    font-size: 29pt;
+    width: 15%;
+    font-weight: bold;
 }
-.img1 {
-  margin-left: 8%;
 }
-
